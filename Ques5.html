@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Assignment2 - Q5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .container {
+        width: 40%;
+        margin-top: 10rem;
+      }
+      form {
+        margin: 2rem;
+        padding: 2rem;
+        /* align-items: center; */
+
+        border: 2px solid black;
+        border-radius: 2rem;
+      }
+      .submitbtn {
+        display: flex;
+        margin-left: 4rem;
+        /* justify-content: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="mb-3 row">
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter a text "
+              style="width: 220px"
+            />
+          </div>
+          <div class="col-6">
+            <h6 class="text-danger" id="error">
+              *Please fill all credential!!
+            </h6>
+          </div>
+        </div>
+        <div class="submitbtn">
+          <input
+            type="submit"
+            id="submit"
+            class="btn btn-dark"
+            value="Submit"
+            
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#error").hide();
+        let txt = $("#name").val();
+
+        $("form").submit(function (events) {
+          event.preventDefault();
+          if ($("#name").val() == "") {
+            $("#error").show(); 
+            return;
+          }
+          confirm(`Entered Successfull!!`);
+        });
+      });
+    </script>
+  </body>
+</html>

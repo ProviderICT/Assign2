@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Assignment2 - Q3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: large;
+      }
+      .container {
+        margin: 6rem auto;
+      }
+      .btn {
+        margin: 2rem;
+        margin-left: 24rem;
+        width: 23rem;
+      }
+      .toggle {
+        width: 80rem;
+        line-height: 2;
+        /* border: 1px solid black; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button type="button" class="btn btn-outline-dark showHide">
+        Toggle Button
+      </button>
+      <div class="toggle">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptas totam quibusdam, inventore quam tempore facilis. Ipsum, quo
+        sapiente tenetur dolorum fugiat necessitatibus maiores eos nesciunt,
+        numquam cum dicta voluptatibus! Beatae odio dolore magni sequi
+        dignissimos repudiandae debitis eius iusto numquam, aut eligendi
+        nesciunt inventore minus nostrum cupiditate tenetur modi? Consequatur
+        explicabo illum totam maxime velit consectetur fugiat quos ut beatae
+        provident qui itaque vel officiis ad, facere error dolores cupiditate
+        expedita unde! Dolorum, iusto eveniet! Fuga ratione reiciendis natus
+        autem, doloremque harum ullam dolorem modi tempore eaque corrupti
+        commodi eos debitis aperiam, ipsum placeat velit dignissimos odit. Saepe
+        earum dolor illo? Nobis atque consequatur ad recusandae ex,
+        reprehenderit architecto ducimus provident dolorum! Sint pariatur,
+        quisquam soluta harum odio earum eius reprehenderit ducimus magnam natus
+        molestias, alias temporibus, rerum sapiente saepe facilis! Obcaecati
+        minus dicta mollitia vitae ea non accusantium eos dolores reprehenderit
+        sit, aspernatur earum modi odio harum eum?
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(function () {
+          $(".showHide").on("click", function () {
+            $(".toggle").toggle();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
